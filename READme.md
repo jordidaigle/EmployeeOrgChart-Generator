@@ -21,7 +21,7 @@
   ## Usage
   Run the application with the CLI command node index.js and follow the prompts.
   ## Testing
-  Run the tests with the CLI command Some unit Testing done. no need to repeat.
+  Some unit Testing done. no need to repeat.
   ## License
   This project is licensed under the la License - see the [LICENSE.txt](https://github.com/jordidaigle/EmployeeCharts/blob/master/License.txt) file for details
   ## Contributing
