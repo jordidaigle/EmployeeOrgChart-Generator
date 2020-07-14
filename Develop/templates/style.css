@@ -1,0 +1,31 @@
+.jumbotron{
+    background-color: rgb(245, 135, 135);
+}
+
+.employee-card {
+    margin: 15px;
+    box-shadow: 6px 10px 4px lightgray;
+}
+
+.card-header {
+    background-color: rgb(196, 219, 248);
+}
+
+.list-group {
+    margin-top: 30px;
+}
+.list-group-item {
+    border-color:rgb(240, 240, 240);
+} 
+
+.fa-glasses{
+    color: rgba(2, 2, 131, 0.692);
+}
+
+.fa-mug-hot{
+    color: rgb(2, 2, 131, 0.692);
+}
+
+.fa-user-graduate {
+    color: rgb(2, 2, 131, 0.692);
+}
