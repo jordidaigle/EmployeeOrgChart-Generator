@@ -3,7 +3,7 @@
   [![License.txt][license-shield]][license-url]
   # EmployeeCharts
   ## Description
-  Generate cards with employee information based on a CLI series of questions. HTML will be renderd showing the employee information.
+  Generate cards with employee information based on a CLI series of questions. HTML will be rendered showing the employee information.
   ## Table of Contents
   - [Title](#title)
   - [Description](#description)
