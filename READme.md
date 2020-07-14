@@ -17,7 +17,8 @@
   - [Questions and Feedback](#questions-and-feedback)
   
   ## Screenshots
-  <img src="https://github.com/jordidaigle/EmployeeOrgChart-Generator/blob/master/Assets/finishedversion.png" href="https://drive.google.com/file/d/1Eb4HNMgE_bNMWmn0aYqPY-treWIIalZH/view" style=" width:100px ; height:100px " />
+  <a href="https://drive.google.com/file/d/1Eb4HNMgE_bNMWmn0aYqPY-treWIIalZH/view">Click HERE to see a Demo<a>
+  <img src="https://github.com/jordidaigle/EmployeeOrgChart-Generator/blob/master/Assets/finishedversion.png" style=" width:100px ; height:100px " />
   
   ## Installation
   Download (and unpack) or clone the repo, then using a CLI run the node app.js command.
