@@ -9,12 +9,13 @@ const OUTPUT_DIR=path.resolve(__dirname,"output");
 const outputPath=path.join(OUTPUT_DIR,"team.html");
 
 const render=require("./lib/htmlRenderer");
+const teamMembers = [];
 
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
 
-function userInput() {
+function newEmp() {
     inquirer
         .prompt([
             {
@@ -43,20 +44,35 @@ function userInput() {
                 message: "What's the Office Number for the employee?",
                 name: "officeNumber"
             },
-            {
-                type: "input",
-                message: "What's the Github username for the employee?",
-                name: "github"
-            },
+            // {
+            //     type: "input",
+            //     message: "What's the Github username for the employee?",
+            //     name: "github"
+            // },
+            // {
+            //     type: "input",
+            //     message: "What's school does the employee attend?",
+            //     name: "school"
+            // },
         ])
 
         .then(response => {
-            console.log(response);
+
+            const manager1 = new Manager(response.name,response.id,response.email,response.officeNumber);
+            teamMembers.push(manager1);
+            console.log(teamMembers);
+
+            buildTeam();
         })
+            
+            const buildTeam = () => {
+                let renderTeam = render(teamMembers);
+                fs.writeFileSync(outputPath, renderTeam, "utf-8")
+            }
     }
 
-userInput();
 
+ newEmp();
 
 
 
