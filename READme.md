@@ -17,7 +17,7 @@
   - [Questions and Feedback](#questions-and-feedback)
   ## Screenshots
    
-    <img src="Assets/finishedversion.png" style=" width:100px ; height:100px " />
+    <img src="https://github.com/jordidaigle/EmployeeOrgChart-Generator/blob/master/Assets/finishedversion.png" style=" width:100px ; height:100px " />
   
   ## Installation
   Download (and unpack) or clone the repo, then using a CLI run the node app.js command.
