@@ -17,9 +17,10 @@
   - [Questions and Feedback](#questions-and-feedback)
   ## Screenshots
   ## Installation
-  Download (and unpack) or clone the repo, then using a CLI run the node index.js command.
+  Download (and unpack) or clone the repo, then using a CLI run the node app.js command.
+  This app uses npm with jest, fs, inquirer, and path.
   ## Usage
-  Run the application with the CLI command node index.js and follow the prompts.
+  Run the application with the CLI command node app.js and follow the prompts.
   ## Testing
   Some unit Testing done. no need to repeat.
   ## License
