@@ -1,18 +1,64 @@
-const Manager = require("./lib/Manager");
-const Engineer = require("./lib/Engineer");
-const Intern = require("./lib/Intern");
-const inquirer = require("inquirer");
-const path = require("path");
-const fs = require("fs");
+const Manager=require("./lib/Manager");
+const Engineer=require("./lib/Engineer");
+const Intern=require("./lib/Intern");
+const inquirer=require("inquirer");
+const path=require("path");
+const fs=require("fs");
 
-const OUTPUT_DIR = path.resolve(__dirname, "output");
-const outputPath = path.join(OUTPUT_DIR, "team.html");
+const OUTPUT_DIR=path.resolve(__dirname,"output");
+const outputPath=path.join(OUTPUT_DIR,"team.html");
 
-const render = require("./lib/htmlRenderer");
+const render=require("./lib/htmlRenderer");
 
 
 // Write code to use inquirer to gather information about the development team members,
 // and to create objects for each team member (using the correct classes as blueprints!)
+
+function userInput() {
+    inquirer
+        .prompt([
+            {
+                type: "input",
+                message: "What role is this for?",
+                name: "role",
+                choices: ['Intern','Manager','Employee']
+            },
+            {
+                type: "input",
+                message: "What's the employee's name?",
+                name: "name"
+            },
+            {
+                type: "input",
+                message: "What's the ID for the employee?",
+                name: "id"
+            },
+            {
+                type: "input",
+                message: "What's the email for the employee?",
+                name: "email"
+            },
+            {
+                type: "input",
+                message: "What's the Office Number for the employee?",
+                name: "officeNumber"
+            },
+            {
+                type: "input",
+                message: "What's the Github username for the employee?",
+                name: "github"
+            },
+        ])
+
+        .then(response => {
+            console.log(response);
+        })
+    }
+
+userInput();
+
+
+
 
 // After the user has input all employees desired, call the `render` function (required
 // above) and pass in an array containing all employee objects; the `render` function will
